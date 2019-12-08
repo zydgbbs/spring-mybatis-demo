@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <typeAliases>
+        <!--单个别名定义，不区分大小写
+        <typeAlias type="com.zydgbbs.domain.User" alias="user"/>-->
+        <!--别名，包扫描器，别名是类的全称，不区分大小写-->
+        <package name="com.zydgbbs.domain"/>
+    </typeAliases>
+
+</configuration>
