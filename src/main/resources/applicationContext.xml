@@ -6,8 +6,14 @@
 
     <import resource="spring-mybatis.xml"/>
 
+    <!--方式一-->
     <bean id="userMapper" class="com.zydgbbs.mapper.UserMapperImpl">
         <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+
+    <!--方式二-->
+    <bean id="userMapper2" class="com.zydgbbs.mapper.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
     </bean>
 
 </beans>
